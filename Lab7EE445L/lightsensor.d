@@ -1,0 +1,1 @@
+.\lightsensor.o: LightSensor.c

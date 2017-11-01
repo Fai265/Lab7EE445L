@@ -1,0 +1,1 @@
+.\peltier.o: Peltier.c

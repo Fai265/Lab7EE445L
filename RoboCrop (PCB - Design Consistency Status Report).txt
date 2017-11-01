@@ -1,0 +1,18 @@
+Design Consistency Status Report
+--------------------------------
+
+Report File:        C:\Keil\EE445L\Lab7EE445L\RoboCrop (PCB - Design Consistency Status Report).txt
+Report Written:     Wednesday, November 01, 2017
+Design Path:        C:\Keil\EE445L\Lab7EE445L\RoboCrop.pcb
+Design Title:       
+Created:            1/29/2013 12:01:41 AM
+Last Saved:         3/28/2017 8:21:32 AM
+Editing Time:       827 min
+Units:              mil (precision 0)
+
+
+Checking integrity of Schematic "C:\Keil\EE445L\Lab7EE445L\RoboCrop.sch" with PCB "C:\Keil\EE445L\Lab7EE445L\RoboCrop.pcb"
+==========================================================================================================================
+
+
+End Of Report.

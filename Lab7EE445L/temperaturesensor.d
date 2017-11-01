@@ -1,0 +1,1 @@
+.\temperaturesensor.o: TemperatureSensor.c

@@ -29,14 +29,26 @@
 #include "uart.h"
 #include "PLL.h"
 
-int main(void){ int32_t data;
+uint32_t tempData;
+uint32_t lightData;
+uint32_t moistData;
+
+int main(void){
   PLL_Init(Bus80MHz);   // 80 MHz
   UART_Init();              // initialize UART device
-  ADC0_InitSWTriggerSeq3_Ch9();
+  ADC0_Init();
   while(1){
-    data = ADC0_InSeq3();
-    UART_OutString("\n\rADC data =");
-    UART_OutUDec(data);
+    tempData = ADC0_InSeq3();
+		lightData = ADC0_InSeq2();
+		moistData = ADC0_InSeq1();
+    UART_OutString("\n\rTemperature data =");
+    UART_OutUDec(tempData);
+		
+		UART_OutString("\n\rLight data =");
+    UART_OutUDec(lightData);
+		
+		UART_OutString("\n\rMoisture data =");
+    UART_OutUDec(moistData);
   }
 }
 

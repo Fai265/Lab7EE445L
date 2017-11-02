@@ -1,102 +1,24 @@
 Forward Design Changes Report
 -----------------------------
 
-Report File:        C:\Keil\EE445L\Lab7EE445L\RoboCrop (PCB - Forward Design Changes Report).txt
-Report Written:     Wednesday, November 01, 2017
-Design Path:        C:\Keil\EE445L\Lab7EE445L\RoboCrop.pcb
+Report File:        C:\Users\Cooper\Documents\GitHub\Lab7EE445L\RoboCrop (PCB - Forward Design Changes Report).txt
+Report Written:     Thursday, November 02, 2017
+Design Path:        C:\Users\Cooper\Documents\GitHub\Lab7EE445L\RoboCrop.pcb
 Design Title:       
 Created:            1/29/2013 12:01:41 AM
-Last Saved:         3/28/2017 8:21:32 AM
-Editing Time:       827 min
-Units:              mil (precision 0)
+Last Saved:         11/2/2017 7:52:07 AM
+Editing Time:       2052 min
+Units:              inches (precision 3)
 
-Ignoring PCB only pad J5-5 on net "GND"
+Disconnected pin "BoardPWR-1" from net "Valve".
 
-Disconnected pin "U2-2" from net "GND".
-Disconnected pin "U2-1" from net "+3.3".
-Disconnected pin "U2-3" from net "+5V".
-Disconnected pin "J5-1" from net "Battery".
-Disconnected pin "SW2-1" from net "Battery".
+Added net "N0780".
 
-Deleted component reference "U2".
+Added component reference "CONN1" of component "Barrel_Jack", package "USER".
 
-Changed component reference "J5" from component "USB_Micro-B_SM", package "SM" to component "PowerHeader", package "SIP".
-
-Added net "+12V".
-Added net "N0675".
-Added net "N0676".
-Added net "N0679".
-Added net "N0687".
-Added net "N0692".
-Added net "N0693".
-Added net "N0701".
-Added net "N0702".
-Added net "N0704".
-Added net "N0705".
-Added net "PE2".
-Added net "N0709".
-Added net "N0710".
-Added net "N0711".
-Added net "N0712".
-Added net "N0713".
-
-Added component reference "U4" of component "LM7805CT", package "TO-220".
-Added component reference "Q1" of component "PN2222", package "TO92".
-Added component reference "RL1" of component "Relay type 47", package "DSC".
-Added component reference "RL2" of component "Relay type 47", package "DSC".
-Added component reference "J2" of component "PowerHeader", package "SIP".
-Added component reference "D2" of component "1N914", package "MISC".
-Added value "Manufacturer=" to component reference "D2".
-
-Added value "Manufacturer Part Number=" to component reference "D2".
-
-Added value "Distributor=" to component reference "D2".
-
-Added value "Distributor Part Number=" to component reference "D2".
-
-Added component reference "R4" of component "0.125Wresistor", package "DIL".
-Changed value "V" on component reference "R4" to "20".
-Added component reference "R5" of component "0.125Wresistor", package "DIL".
-Changed value "V" on component reference "R5" to "20".
-Added component reference "J6" of component "PowerHeader", package "SIP".
-Added component reference "J7" of component "PowerHeader", package "SIP".
-Added component reference "J8" of component "PowerHeader", package "SIP".
-
-Connected pin "J3-16" to net "N0675".
-Connected pin "J3-15" to net "N0676".
-Connected pin "U1-47" to net "N0712".
-Connected pin "U1-46" to net "N0676".
-Connected pin "U1-45" to net "N0675".
-Connected pin "U1-61" to net "N0705".
-Connected pin "U1-7" to net "PE2".
-Connected pin "U1-8" to net "PE1".
-Connected pin "U1-9" to net "PE1".
-Connected pin "SW2-1" to net "+12V".
-Connected pin "U4-1" to net "+5V".
-Connected pin "U4-2" to net "GND".
-Connected pin "U4-3" to net "+3.3".
-Connected pin "Q1-2" to net "N0704".
-Connected pin "Q1-1" to net "N0702".
-Connected pin "Q1-3" to net "N0701".
-Connected pin "RL1-2" to net "N0687".
-Connected pin "RL1-5" to net "+12V".
-Connected pin "RL2-1" to net "N0692".
-Connected pin "J2-1" to net "N0693".
-Connected pin "J2-2" to net "N0692".
-Connected pin "D2-2" to net "+12V".
-Connected pin "D2-1" to net "N0687".
-Connected pin "R4-1" to net "N0702".
-Connected pin "R4-2" to net "N0687".
-Connected pin "R5-1" to net "N0705".
-Connected pin "R5-2" to net "N0704".
-Connected pin "J5-1" to net "N0709".
-Connected pin "J5-2" to net "PE2".
-Connected pin "J6-1" to net "N0710".
-Connected pin "J6-2" to net "PE1".
-Connected pin "J7-1" to net "N0711".
-Connected pin "J7-2" to net "PE1".
-Connected pin "J8-1" to net "N0713".
-Connected pin "J8-2" to net "N0712".
+Connected pin "BoardPWR-1" to net "N0780".
+Connected pin "CONN1-1" to net "N0780".
+Connected pin "CONN1-3" to net "GND".
 
 
 End Of Report.

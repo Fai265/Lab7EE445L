@@ -6,49 +6,17 @@ Report Written:     Thursday, November 02, 2017
 Design Path:        C:\Users\Cooper\Documents\GitHub\Lab7EE445L\RoboCrop.pcb
 Design Title:       
 Created:            1/29/2013 12:01:41 AM
-Last Saved:         11/2/2017 10:03:17 AM
-Editing Time:       2136 min
+Last Saved:         11/2/2017 10:13:46 AM
+Editing Time:       2146 min
 Units:              inches (precision 3)
 
-Disconnected pin "Peltier-2" from net "N0784".
-Disconnected pin "Fan-1" from net "N0784".
+Added net "N0804".
 
-Deleted net "N0784".
+Connected pin "Peltier-2" to net "+5V".
+Connected pin "Q4-2" to net "N0804".
+Connected pin "R8-2" to net "N0804".
 
-Added net "N0785".
-Added net "N0786".
-Added net "N0788".
-
-Added component reference "Q4" of component "PN2222", package "TO92".
-Added component reference "R8" of component "0.125Wresistor", package "DIL".
-Changed value "V" on component reference "R8" to "20".
-Added component reference "U2" of component "LM2937ET-3.3", package "TO220".
-Added component reference "C15" of component "tantalum", package "C".
-Changed value "V" on component reference "C15" to "4.7uF".
-Added component reference "TP3" of component "Testpoint_TwoHole", package "DIL".
-Added component reference "C16" of component "tantalum", package "C".
-Changed value "V" on component reference "C16" to "4.7uF".
-
-Renamed component reference "U3" to "U3".
-
-
-Connected pin "U1-64" to net "N0788".
-Connected pin "Fan-1" to net "N0785".
-Connected pin "Q4-1" to net "N0785".
-Connected pin "Q4-3" to net "N0786".
-Connected pin "R8-1" to net "N0788".
-Connected pin "U2-1" to net "+5V".
-Connected pin "U2-2" to net "GND".
-Connected pin "U2-3" to net "+3.3".
-Connected pin "U3-3" to net "+5V".
-Connected pin "C15-1" to net "+5V".
-Connected pin "C15-2" to net "GND".
-Connected pin "TP3-1" to net "+5V".
-Connected pin "TP3-2" to net "+5V".
-Connected pin "C16-1" to net "+5V".
-Connected pin "C16-2" to net "GND".
-
-Net N0780 renamed to +12V
+Net "+12V" changed from net class "Signal" to net class "Power".
 
 
 End Of Report.

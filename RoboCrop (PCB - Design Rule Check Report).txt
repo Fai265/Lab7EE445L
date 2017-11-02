@@ -1,0 +1,62 @@
+Design Rule Check Report
+------------------------
+
+Report File:        C:\Keil\EE445L\Lab7EE445L\RoboCrop (PCB - Design Rule Check Report).txt
+Report Written:     Thursday, November 02, 2017
+Design Path:        C:\Keil\EE445L\Lab7EE445L\RoboCrop.pcb
+Design Title:       
+Created:            1/29/2013 12:01:41 AM
+Last Saved:         11/2/2017 8:39:24 AM
+Editing Time:       2065 min
+Units:              inches (precision 3)
+
+
+Results
+=======
+
+Text will appear mirrored
+
+Number of errors found : 1
+
+
+Settings
+========
+
+
+Spacings
+
+=========
+
+Tracks        Yes
+Pads and Vias Yes
+Shapes        Yes
+Text          Yes
+Board         Yes
+Drills        Yes
+Components    No
+
+
+Manufacturing
+
+==============
+
+Min Drill Hole Size  Yes
+Min Track Width      Yes
+Min Annular Ring     Yes
+Copper Text In Board Yes
+Mirrored Text        Yes
+Routing Areas        Yes
+Drill Breakout       Yes
+
+
+Nets
+
+=====
+
+Net Completion               Yes
+Dangling Tracks              Yes
+Net Track Length Differences No
+
+
+
+End Of Report.

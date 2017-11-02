@@ -1,24 +1,18 @@
 Forward Design Changes Report
 -----------------------------
 
-Report File:        C:\Users\Cooper\Documents\GitHub\Lab7EE445L\RoboCrop (PCB - Forward Design Changes Report).txt
+Report File:        C:\Keil\EE445L\Lab7EE445L\RoboCrop (PCB - Forward Design Changes Report).txt
 Report Written:     Thursday, November 02, 2017
-Design Path:        C:\Users\Cooper\Documents\GitHub\Lab7EE445L\RoboCrop.pcb
+Design Path:        C:\Keil\EE445L\Lab7EE445L\RoboCrop.pcb
 Design Title:       
 Created:            1/29/2013 12:01:41 AM
-Last Saved:         11/2/2017 7:52:07 AM
-Editing Time:       2052 min
+Last Saved:         11/2/2017 8:36:52 AM
+Editing Time:       2064 min
 Units:              inches (precision 3)
 
-Disconnected pin "BoardPWR-1" from net "Valve".
+Disconnected pin "Valve-1" from net "GND".
 
-Added net "N0780".
-
-Added component reference "CONN1" of component "Barrel_Jack", package "USER".
-
-Connected pin "BoardPWR-1" to net "N0780".
-Connected pin "CONN1-1" to net "N0780".
-Connected pin "CONN1-3" to net "GND".
+Connected pin "Valve-1" to net "N0687".
 
 
 End Of Report.

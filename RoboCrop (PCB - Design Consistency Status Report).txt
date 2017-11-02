@@ -6,15 +6,19 @@ Report Written:     Thursday, November 02, 2017
 Design Path:        C:\Keil\EE445L\Lab7EE445L\RoboCrop.pcb
 Design Title:       
 Created:            1/29/2013 12:01:41 AM
-Last Saved:         11/2/2017 8:39:24 AM
-Editing Time:       2065 min
+Last Saved:         11/2/2017 9:11:11 AM
+Editing Time:       2087 min
 Units:              inches (precision 3)
 
 
 Checking integrity of Schematic "C:\Keil\EE445L\Lab7EE445L\RoboCrop.sch" with PCB "C:\Keil\EE445L\Lab7EE445L\RoboCrop.pcb"
 ==========================================================================================================================
 
-The designs are the same.
+The PCB and Schematic designs do not match.
+To bring them into line, you will need to make the following changes to the PCB design:
+
+Component 'Barrel_Jack' package 'USER' in PCB is newer version than Schematic, use Update Component to correct this.
+Component 'ESP8266' package 'USER' in Schematic is newer version than PCB, use Update Component to correct this.
 
 
 End Of Report.

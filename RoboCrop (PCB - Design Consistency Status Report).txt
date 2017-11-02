@@ -1,18 +1,33 @@
 Design Consistency Status Report
 --------------------------------
 
-Report File:        C:\Users\Cooper\Documents\GitHub\Lab7EE445L\RoboCrop (PCB - Design Consistency Status Report).txt
+Report File:        C:\Keil\EE445L\Lab7EE445L\RoboCrop (PCB - Design Consistency Status Report).txt
 Report Written:     Thursday, November 02, 2017
-Design Path:        C:\Users\Cooper\Documents\GitHub\Lab7EE445L\RoboCrop.pcb
+Design Path:        C:\Keil\EE445L\Lab7EE445L\RoboCrop.pcb
 Design Title:       
 Created:            1/29/2013 12:01:41 AM
-Last Saved:         11/2/2017 10:13:46 AM
-Editing Time:       2146 min
+Last Saved:         11/2/2017 10:26:24 AM
+Editing Time:       2154 min
 Units:              inches (precision 3)
 
 
-Checking integrity of Schematic "C:\Users\Cooper\Documents\GitHub\Lab7EE445L\RoboCrop.sch" with PCB "C:\Users\Cooper\Documents\GitHub\Lab7EE445L\RoboCrop.pcb"
-==============================================================================================================================================================
+Checking integrity of Schematic "C:\Keil\EE445L\Lab7EE445L\RoboCrop.sch" with PCB "C:\Keil\EE445L\Lab7EE445L\RoboCrop.pcb"
+==========================================================================================================================
+
+The PCB and Schematic designs do not match.
+To bring them into line, you will need to make the following changes to the PCB design:
+
+Disconnect Pin Q4-3 from Net "N0786"
+
+Delete Net "N0786"
+
+Component 'Barrel_Jack' package 'USER' in PCB is newer version than Schematic, use Update Component to correct this.
+Component 'ESP8266' package 'USER' in Schematic is newer version than PCB, use Update Component to correct this.
+
+Connect Pin Q4-3 to Net "Gnd"
+
+Net "N0788" uses net class "Signal" in the schematic and net class "Power" in the PCB.
+Net "N0804" uses net class "Signal" in the schematic and net class "Power" in the PCB.
 
 
 End Of Report.

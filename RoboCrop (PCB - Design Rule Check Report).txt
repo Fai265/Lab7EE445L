@@ -6,8 +6,13 @@ Report Written:     Thursday, November 02, 2017
 Design Path:        C:\Users\Cooper\Documents\GitHub\Lab7EE445L\RoboCrop.pcb
 Design Title:       
 Created:            1/29/2013 12:01:41 AM
+<<<<<<< HEAD
 Last Saved:         11/2/2017 11:47:41 AM
 Editing Time:       2239 min
+=======
+Last Saved:         11/2/2017 10:30:21 AM
+Editing Time:       2155 min
+>>>>>>> origin/master
 Units:              inches (precision 3)
 
 

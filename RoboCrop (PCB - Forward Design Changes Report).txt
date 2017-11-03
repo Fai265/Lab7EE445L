@@ -6,17 +6,20 @@ Report Written:     Thursday, November 02, 2017
 Design Path:        C:\Users\Cooper\Documents\GitHub\Lab7EE445L\RoboCrop.pcb
 Design Title:       
 Created:            1/29/2013 12:01:41 AM
-Last Saved:         11/2/2017 10:13:46 AM
-Editing Time:       2146 min
+Last Saved:         11/2/2017 11:28:51 AM
+Editing Time:       2234 min
 Units:              inches (precision 3)
 
-Added net "N0804".
+Disconnected pin "J3-10" from net "Valve".
+Disconnected pin "Valve-2" from net "Valve".
+Disconnected pin "D2-2" from net "Valve".
+Disconnected pin "Fan-2" from net "+5V".
 
-Connected pin "Peltier-2" to net "+5V".
-Connected pin "Q4-2" to net "N0804".
-Connected pin "R8-2" to net "N0804".
+Deleted net "Valve".
 
-Net "+12V" changed from net class "Signal" to net class "Power".
+Connected pin "Valve-2" to net "+12V".
+Connected pin "D2-2" to net "+12V".
+Connected pin "Fan-2" to net "+12V".
 
 
 End Of Report.

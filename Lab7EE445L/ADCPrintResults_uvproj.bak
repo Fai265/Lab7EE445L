@@ -431,11 +431,6 @@
               <FilePath>.\PLL.c</FilePath>
             </File>
             <File>
-              <FileName>SoilSensor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\SoilSensor.c</FilePath>
-            </File>
-            <File>
               <FileName>Peltier.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Peltier.c</FilePath>
@@ -451,16 +446,6 @@
               <FilePath>.\ESP8266.c</FilePath>
             </File>
             <File>
-              <FileName>LED.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\ValvanoWareTM4C123\ESP8266_4C123\LED.c</FilePath>
-            </File>
-            <File>
-              <FileName>esp8266.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\ValvanoWareTM4C123\ESP8266_4C123\esp8266.h</FilePath>
-            </File>
-            <File>
               <FileName>FIFO.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\ValvanoWareTM4C123\ESP8266_4C123\FIFO.h</FilePath>
@@ -469,6 +454,11 @@
               <FileName>LightSensor.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\LightSensor.c</FilePath>
+            </File>
+            <File>
+              <FileName>TemperatureSensor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\TemperatureSensor.c</FilePath>
             </File>
           </Files>
         </Group>

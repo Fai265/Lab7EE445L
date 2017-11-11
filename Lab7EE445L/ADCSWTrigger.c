@@ -23,7 +23,7 @@
  */
 #include <stdint.h>
 #include "ADCSWTrigger.h"
-#include "../inc/tm4c123gh6pm.h"
+#include "tm4c123gh6pm.h"
 
 // There are many choices to make when using the ADC, and many
 // different combinations of settings will all do basically the
@@ -87,10 +87,10 @@ void ADC0_Init(void){
   SYSCTL_RCGCGPIO_R |= 0x10;
   while((SYSCTL_PRGPIO_R&0x10) != 0x10){};
 
-  GPIO_PORTE_DIR_R &= ~0x0E;      // 2) make PE1-3 input
-  GPIO_PORTE_AFSEL_R |= 0x0E;     // 3) enable alternate function on PE1-3
-  GPIO_PORTE_DEN_R &= ~0x0E;      // 4) disable digital I/O on PE1-3
-  GPIO_PORTE_AMSEL_R |= 0x0E;     // 5) enable analog functionality on PE1-3
+  GPIO_PORTE_DIR_R &= ~0x07;      // 2) make PE0-2 input
+  GPIO_PORTE_AFSEL_R |= 0x07;     // 3) enable alternate function on PE0-2
+  GPIO_PORTE_DEN_R &= ~0x07;      // 4) disable digital I/O on PE0-2
+  GPIO_PORTE_AMSEL_R |= 0x07;     // 5) enable analog functionality on PE0-2
   SYSCTL_RCGCADC_R |= 0x0001;   // 7) activate ADC0
   while((SYSCTL_PRADC_R&0x0001) != 0x0001){};    // good code, but not yet implemented in simulator
 
@@ -102,20 +102,21 @@ void ADC0_Init(void){
   ADC0_EMUX_R &= ~0xF000;         // 10) seq3 is software trigger
 		
   ADC0_SSMUX1_R &= ~0x000F;       // 11) clear SS1 field
-  ADC0_SSMUX1_R += 3;             //    set channel
+  ADC0_SSMUX1_R += 3;             //    set channel (SS1 is PE0)
   ADC0_SSCTL1_R = 0x0006;         // 12) no TS0 D0, yes IE0 END0
 		
 	ADC0_SSMUX2_R &= ~0x000F;       // 11) clear SS2 field
-  ADC0_SSMUX2_R += 2;             //    set channel
+  ADC0_SSMUX2_R += 2;             //    set channel (SS2 is PE1)
   ADC0_SSCTL2_R = 0x0006;         // 12) no TS0 D0, yes IE0 END0
 		
 	ADC0_SSMUX3_R &= ~0x000F;       // 11) clear SS3 field
-  ADC0_SSMUX3_R += 1;             //    set channel
+  ADC0_SSMUX3_R += 1;             //    set channel (SS3 is PE2)
   ADC0_SSCTL3_R = 0x0006;         // 12) no TS0 D0, yes IE0 END0
 
   ADC0_IM_R &= ~0x000E;           // 13) disable SS1-3 interrupts
   ADC0_ACTSS_R |= 0x000E;         // 14) enable sample sequencer 1-3
 }
+
 
 
 //------------ADC0_InSeq3------------
@@ -137,7 +138,7 @@ uint32_t ADC0_InSeq3(void){  uint32_t result;
 // Output: 12-bit result of ADC conversion
 uint32_t ADC0_InSeq2(void){  
 	uint32_t result;
-  ADC0_PSSI_R = 0x0004;            // 1) initiate SS3
+  ADC0_PSSI_R = 0x0004;            // 1) initiate SS2
   while((ADC0_RIS_R&0x04)==0){};   // 2) wait for conversion done
   result = ADC0_SSFIFO2_R&0xFFF;   // 3) read result
   ADC0_ISC_R = 0x0004;             // 4) acknowledge completion
@@ -150,7 +151,7 @@ uint32_t ADC0_InSeq2(void){
 // Output: 12-bit result of ADC conversion
 uint32_t ADC0_InSeq1(void){  
 	uint32_t result;
-  ADC0_PSSI_R = 0x0002;            // 1) initiate SS3
+  ADC0_PSSI_R = 0x0002;            // 1) initiate SS1
   while((ADC0_RIS_R&0x02)==0){};   // 2) wait for conversion done
   result = ADC0_SSFIFO1_R&0xFFF;   // 3) read result
   ADC0_ISC_R = 0x0002;             // 4) acknowledge completion

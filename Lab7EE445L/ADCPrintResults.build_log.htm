@@ -4,36 +4,47 @@
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
 C:\Keil\EE445L\Lab7EE445L\Lab7EE445L\ADCPrintResults.uvproj
-Project File Date:  11/01/2017
+Project File Date:  11/10/2017
 
 <h2>Output:</h2>
 Rebuild target 'ADCPrintResults'
 assembling startup.s...
 compiling UART.c...
 compiling main.c...
-ADCSWTrigger.h(90): warning:  #1-D: last line of file ends without a newline
-  uint32_t ADC0_InSeq1(void);
-main.c: 1 warning, 0 errors
 compiling ADCSWTrigger.c...
-ADCSWTrigger.h(90): warning:  #1-D: last line of file ends without a newline
-  uint32_t ADC0_InSeq1(void);
-ADCSWTrigger.c(158): warning:  #1-D: last line of file ends without a newline
-  }
-ADCSWTrigger.c: 2 warnings, 0 errors
 compiling PLL.c...
 compiling Peltier.c...
 compiling WaterLevel.c...
 compiling ESP8266.c...
 compiling LightSensor.c...
 compiling TemperatureSensor.c...
+compiling Timer0A.c...
+Timer0A.c(9): warning:  #223-D: function "DisableInterrupts" declared implicitly
+    DisableInterrupts();
+Timer0A.c: 1 warning, 0 errors
+linking...
+Program Size: Code=1912 RO-data=32 RW-data=12 ZI-data=1124  
+".\ADCPrintResults.axf" - 0 Error(s), 1 Warning(s).
+ne of file ends without a newline
+  }
+Timer0A.c: 2 warnings, 0 errors
 linking...
 Program Size: Code=1912 RO-data=32 RW-data=12 ZI-data=1124  
 ".\ADCPrintResults.axf" - 0 Error(s), 3 Warning(s).
-Load "C:\\Keil\\EE445L\\Lab7EE445L\\Lab7EE445L\\ADCPrintResults.axf" 
-Connecting: Mode=JTAG, Speed=1000000Hz
-Erase Done.
-Programming Done.
-Verify OK.
-</pre>
-</body>
-</html>
+q1(void);
+Timer0A.c(6): error:  #5: cannot open source input file "ST7735.h": No such file or directory
+  #include "ST7735.h"
+Timer0A.c: 1 warning, 1 error
+".\ADCPrintResults.axf" - 1 Error(s), 4 Warning(s).
+Target not created
+Seq1(void);
+Timer0A.c(6): error:  #5: cannot open source input file "ST7735.h": No such file or directory
+  #include "ST7735.h"
+Timer0A.c: 1 warning, 1 error
+".\ADCPrintResults.axf" - 3 Error(s), 3 Warning(s).
+Target not created
+le "ST7735.h": No such file or directory
+  #include "ST7735.h"
+Timer0A.c: 1 warning, 1 error
+".\ADCPrintResults.axf" - 4 Error(s), 3 Warning(s).
+Target not created

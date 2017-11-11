@@ -10,11 +10,11 @@
 
 #define PD1 (*((volatile uint32_t *)0x40007008))
 
-uint32_t lightLower = 0;
-uint32_t lightUpper = 0;
+uint32_t LightLower = 0;
+uint32_t LightUpper = 0;
 
 /***************************************************************
-lightInit()
+Light_Init()
 	Initializes lower and upper thresholds for light level.
 
 inputs:
@@ -26,19 +26,19 @@ inputs:
 outputs:
 	none
 ***************************************************************/
-void lightInit(uint32_t lowerThresh, uint32_t upperThresh){
+void Light_Init(uint32_t lowerThresh, uint32_t upperThresh){
 	if(lowerThresh < upperThresh){
-		lightLower = lowerThresh;
-		lightUpper = upperThresh;
+		LightLower = lowerThresh;
+		LightUpper = upperThresh;
 	}
 	else{
-		lightLower = 0;
-		lightUpper = 4096;
+		LightLower = 0;
+		LightUpper = 4096;
 	}
 }
 
 /***************************************************************
-checkLight()
+Check_Light()
 	Uses 64x ADC hardware averaging over 1000 samples to check the
 	current light level.
 
@@ -50,19 +50,19 @@ outputs:
 	0  - Light level nominal.
 	1  - Light level too high.
 ***************************************************************/
-int8_t checkLight(void){
+int8_t Check_Light(void){
 	int lightLevel = sensorRead(1);
-	if(lightLevel < lightLower){
+	if(lightLevel < LightLower){
 		return -1;
 	}
-	if(lightLevel > lightUpper){
+	if(lightLevel > LightUpper){
 		return 1;
 	}
 	return 0;
 }
 
 /***************************************************************
-rotateMotor(uint8_t)
+Rotate_Motor(uint8_t)
 	Toggles motor.
 
 inputs:
@@ -71,6 +71,6 @@ inputs:
 outputs:
 	none
 ***************************************************************/
-void rotateMotor(){
+void Rotate_Motor(){
 	PD1 ^= 0x02;
 }

@@ -10,11 +10,11 @@
 
 #define PD0 (*((volatile uint32_t *)0x40007004))
 
-uint32_t moistureLower = 0;
-uint32_t moistureUpper = 0;
+uint32_t MoistureLower = 0;
+uint32_t MoistureUpper = 0;
 
 /***************************************************************
-moistureInit()
+Moisture_Init()
 	Initializes lower and upper thresholds for moisture level.
 
 inputs:
@@ -26,19 +26,19 @@ inputs:
 outputs:
 	none
 ***************************************************************/
-void moistureInit(uint32_t lowerThresh, uint32_t upperThresh){
+void Moisture_Init(uint32_t lowerThresh, uint32_t upperThresh){
 	if(lowerThresh < upperThresh){
-		moistureLower = lowerThresh;
-		moistureUpper = upperThresh;
+		MoistureLower = lowerThresh;
+		MoistureUpper = upperThresh;
 	}
 	else{
-		moistureLower = 0;
-		moistureUpper = 4096;
+		MoistureLower = 0;
+		MoistureUpper = 4096;
 	}
 }
 
 /***************************************************************
-checkmoisture()
+check_moisture()
 	Uses 64x ADC hardware averaging over 1000 samples to check the
 	current moisture level.
 
@@ -50,19 +50,19 @@ outputs:
 	0  - moisture level nominal.
 	1  - moisture level too high.
 ***************************************************************/
-int8_t checkMoisture(void){
+int8_t Check_Moisture(void){
 	int moistureLevel = sensorRead(0);
-	if(moistureLevel < moistureLower){
+	if(moistureLevel < MoistureLower){
 		return -1;
 	}
-	if(moistureLevel > moistureUpper){
+	if(moistureLevel > MoistureUpper){
 		return 1;
 	}
 	return 0;
 }
 
 /***************************************************************
-flowValve()
+Flow_Valve()
 	Toggles the valve.
 
 inputs:
@@ -71,6 +71,6 @@ inputs:
 outputs:
 	none
 ***************************************************************/
-void flowValve(){
+void Flow_Valve(){
 	PD0 ^= 0x01;
 }

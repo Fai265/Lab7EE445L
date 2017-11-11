@@ -9,28 +9,35 @@
 #include "ADCSWTrigger.h"
 #include "uart.h"
 #include "PLL.h"
+#include "TemperatureSensor.h"
 
 uint32_t tempData;
 uint32_t lightData;
 uint32_t moistData;
 
 int main(void){
-  PLL_Init(Bus80MHz);   // 80 MHz
-  UART_Init();              // initialize UART device
-  ADC0_Init();
-  while(1){
-    tempData = ADC0_InSeq3();
-		lightData = ADC0_InSeq2();
-		moistData = ADC0_InSeq1();
-    UART_OutString("\n\rTemperature data =");
-    UART_OutUDec(tempData);
-		
-		UART_OutString("\n\rLight data =");
-    UART_OutUDec(lightData);
-		
-		UART_OutString("\n\rMoisture data =");
-    UART_OutUDec(moistData);
-  }
+//  PLL_Init(Bus80MHz);   // 80 MHz
+//  UART_Init();              // initialize UART device
+//  ADC0_Init();
+//	Switch_Init_Testing();
+//	PeltierTransistor_Init();
+//  while(1){
+//    tempData = ADC0_InSeq3();
+//		PeltierOn(tempData);
+//		UART_OutString("\n\rTemperature data =");
+//    UART_OutUDec(tempData);
+//		/*
+//		lightData = ADC0_InSeq2();
+//		moistData = ADC0_InSeq1();
+
+//		
+//		UART_OutString("\n\rLight data =");
+//    UART_OutUDec(lightData);
+//		
+//		UART_OutString("\n\rMoisture data =");
+//    UART_OutUDec(moistData);
+//		*/
+//  }
 }
 
 

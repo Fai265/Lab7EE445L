@@ -3,10 +3,43 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Keil\EE445L\Lab7EE445L - Copy\Lab7EE445L\ADCPrintResults.uvproj
+C:\Keil\EE445L\Lab7EE445L - Copy Temp\Lab7EE445L\ADCPrintResults.uvproj
 Project File Date:  11/10/2017
 
 <h2>Output:</h2>
-</pre>
-</body>
-</html>
+Rebuild target 'ADCPrintResults'
+assembling startup.s...
+compiling UART.c...
+compiling main.c...
+compiling ADCSWTrigger.c...
+compiling PLL.c...
+compiling WaterLevel.c...
+compiling ESP8266.c...
+compiling LightSensor.c...
+compiling TemperatureSensor.c...
+TemperatureSensor.c(28): warning:  #550-D: variable "delay" was set but never used
+        int delay = 0;
+TemperatureSensor.c: 1 warning, 0 errors
+compiling Timer0A.c...
+Timer0A.c(23): warning:  #223-D: function "DisableInterrupts" declared implicitly
+    DisableInterrupts();
+Timer0A.c: 1 warning, 0 errors
+linking...
+Program Size: Code=1244 RO-data=32 RW-data=12 ZI-data=1124  
+".\ADCPrintResults.axf" - 0 Error(s), 2 Warning(s).
+bleInterrupts();
+Timer0A.c: 1 warning, 0 errors
+".\ADCPrintResults.axf" - 1 Error(s), 3 Warning(s).
+Target not created
+linking...
+.\ADCPrintResults.axf: Error: L6218E: Undefined symbol PeltierOn (referred from main.o).
+.\ADCPrintResults.axf: Error: L6218E: Undefined symbol Switch_Init_Testing (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+".\ADCPrintResults.axf" - 2 Error(s), 4 Warning(s).
+Target not created
+unction "DisableInterrupts" declared implicitly
+    DisableInterrupts();
+Timer0A.c: 1 warning, 0 errors
+".\ADCPrintResults.axf" - 2 Error(s), 6 Warning(s).
+Target not created

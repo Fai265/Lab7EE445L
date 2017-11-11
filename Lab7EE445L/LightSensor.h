@@ -5,7 +5,7 @@
 // November 10, 2017
 
 /***************************************************************
-lightInit()
+Light_Init()
 	Initializes lower and upper thresholds for light level.
 
 inputs:
@@ -17,10 +17,10 @@ inputs:
 outputs:
 	none
 ***************************************************************/
-void lightInit(uint32_t, uint32_t);
+void Light_Init(uint32_t, uint32_t);
 
 /***************************************************************
-checkLight()
+Check_Light()
 	Uses 64x ADC hardware averaging over 1000 samples to check the
 	current light level.
 
@@ -30,10 +30,10 @@ inputs:
 outputs:
 	Digital 0-4096 value of the light level.
 ***************************************************************/
-int32_t checkLight(void);
+int32_t Check_Light(void);
 
 /***************************************************************
-rotateMotor()
+Rotate_Motor()
 	Toggles the motor;
 
 inputs:
@@ -42,4 +42,4 @@ inputs:
 outputs:
 	none
 ***************************************************************/
-void rotateMotor();
+void Rotate_Motor();

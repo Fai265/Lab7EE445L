@@ -4,7 +4,6 @@
 ".\main.o"
 ".\adcswtrigger.o"
 ".\pll.o"
-".\peltier.o"
 ".\waterlevel.o"
 ".\esp8266.o"
 ".\lightsensor.o"

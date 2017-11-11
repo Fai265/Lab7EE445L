@@ -5,7 +5,7 @@
 // November 10, 2017
 
 /***************************************************************
-moistureInit()
+Moisture_Init()
 	Initializes lower and upper thresholds for moisture level.
 
 inputs:
@@ -17,10 +17,10 @@ inputs:
 outputs:
 	none
 ***************************************************************/
-void moistureInit(uint32_t, uint32_t);
+void Moisture_Init(uint32_t, uint32_t);
 
 /***************************************************************
-checkmoisture()
+Check_Moisture()
 	Uses 64x ADC hardware averaging over 1000 samples to check the
 	current moisture level.
 
@@ -30,10 +30,10 @@ inputs:
 outputs:
 	Digital 0-4096 value of the moisture level.
 ***************************************************************/
-int32_t checkMoisture(void);
+int32_t Check_Moisture(void);
 
 /***************************************************************
-flowValve()
+Flow_Valve()
 	Toggles the valve.
 
 inputs:
@@ -42,4 +42,4 @@ inputs:
 outputs:
 	none
 ***************************************************************/
-void flowValve();
+void Flow_Valve();

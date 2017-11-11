@@ -72,19 +72,19 @@ void ADC0_Init(void);
 
 
 //------------ADC0_InSeq3------------
-// Busy-wait Analog to digital conversion from PE2
+// Busy-wait Analog to digital conversion
 // Input: none
 // Output: 12-bit result of ADC conversion
 uint32_t ADC0_InSeq3(void);
 
 //------------ADC0_InSeq2------------
-// Busy-wait Analog to digital conversion from PE1
+// Busy-wait Analog to digital conversion
 // Input: none
 // Output: 12-bit result of ADC conversion
 uint32_t ADC0_InSeq2(void);
 
 //------------ADC0_InSeq1------------
-// Busy-wait Analog to digital conversion from PE0
+// Busy-wait Analog to digital conversion
 // Input: none
 // Output: 12-bit result of ADC conversion
 uint32_t ADC0_InSeq1(void);

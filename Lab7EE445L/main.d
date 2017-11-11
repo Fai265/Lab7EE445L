@@ -3,3 +3,4 @@
 .\main.o: ADCSWTrigger.h
 .\main.o: uart.h
 .\main.o: PLL.h
+.\main.o: TemperatureSensor.h

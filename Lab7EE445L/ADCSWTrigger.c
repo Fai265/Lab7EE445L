@@ -58,16 +58,11 @@
 // SS3 triggering event: software trigger
 // SS3 1st sample source: Ain9 (PE4)
 // SS3 interrupts: enabled but not promoted to controller
-
-// Hardware Configuration:
-// Moisture Sensor- PE0
-// Light Sensor - PE1
-// Temperature Sensor - PE2
-
 void ADC0_InitSWTriggerSeq3_Ch9(void){ 
                                   // 1) activate clock for Port E
   SYSCTL_RCGCGPIO_R |= 0x10;
   while((SYSCTL_PRGPIO_R&0x10) != 0x10){};
+
   GPIO_PORTE_DIR_R &= ~0x10;      // 2) make PE4 input
   GPIO_PORTE_AFSEL_R |= 0x10;     // 3) enable alternate function on PE4
   GPIO_PORTE_DEN_R &= ~0x10;      // 4) disable digital I/O on PE4
@@ -119,14 +114,14 @@ void ADC0_Init(void){
   ADC0_SSCTL3_R = 0x0006;         // 12) no TS0 D0, yes IE0 END0
 
   ADC0_IM_R &= ~0x000E;           // 13) disable SS1-3 interrupts
-	ADC0_SAC_R |= 6;								// 14) enable x64 hardware avg
-  ADC0_ACTSS_R |= 0x000E;         // 15) enable sample sequencer 1-3
+  ADC0_ACTSS_R |= 0x000E;         // 14) enable sample sequencer 1-3
+	ADC0_SAC_R |= 6;								// 15) Set hardware sampling rate at 64x
 }
 
 
 
 //------------ADC0_InSeq3------------
-// Busy-wait Analog to digital conversion
+// Busy-wait Analog to digital conversion from PE2
 // Input: none
 // Output: 12-bit result of ADC conversion
 uint32_t ADC0_InSeq3(void){  uint32_t result;
@@ -139,7 +134,7 @@ uint32_t ADC0_InSeq3(void){  uint32_t result;
 }
 
 //------------ADC0_InSeq2------------
-// Busy-wait Analog to digital conversion
+// Busy-wait Analog to digital conversion from PE1
 // Input: none
 // Output: 12-bit result of ADC conversion
 uint32_t ADC0_InSeq2(void){  
@@ -152,7 +147,7 @@ uint32_t ADC0_InSeq2(void){
 }
 
 //------------ADC0_InSeq1------------
-// Busy-wait Analog to digital conversion
+// Busy-wait Analog to digital conversion from PE0
 // Input: none
 // Output: 12-bit result of ADC conversion
 uint32_t ADC0_InSeq1(void){  

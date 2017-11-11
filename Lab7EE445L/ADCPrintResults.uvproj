@@ -441,6 +441,11 @@
               <FilePath>.\WaterLevel.c</FilePath>
             </File>
             <File>
+              <FileName>ESP8266.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ESP8266.c</FilePath>
+            </File>
+            <File>
               <FileName>FIFO.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\ValvanoWareTM4C123\ESP8266_4C123\FIFO.h</FilePath>
@@ -454,41 +459,6 @@
               <FileName>TemperatureSensor.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\TemperatureSensor.c</FilePath>
-            </File>
-            <File>
-              <FileName>esp8266.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\ESP8266_4C123\esp8266.h</FilePath>
-            </File>
-            <File>
-              <FileName>esp8266.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\ESP8266_4C123\esp8266.c</FilePath>
-            </File>
-            <File>
-              <FileName>tm4c123gh6pm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\tm4c123gh6pm.h</FilePath>
-            </File>
-            <File>
-              <FileName>Peltier.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Peltier.h</FilePath>
-            </File>
-            <File>
-              <FileName>Fan.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Fan.c</FilePath>
-            </File>
-            <File>
-              <FileName>Transistors.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Transistors.c</FilePath>
-            </File>
-            <File>
-              <FileName>Fan.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Fan.h</FilePath>
             </File>
           </Files>
         </Group>

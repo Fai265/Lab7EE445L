@@ -3,3 +3,4 @@
 .\timer0a.o: ADCSWTrigger.h
 .\timer0a.o: tm4c123gh6pm.h
 .\timer0a.o: PLL.h
+.\timer0a.o: ADCSWTrigger.h
